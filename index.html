@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Centro di Controllo</title>
+</head>
+<body>
+  <div class="control-center">
+    <a href="lollo.framer.website/ai/will-summariser" class="control-box">
+      <div class="control-content">
+        <span class="title">Will Summariser</span>
+        <div class="description">
+          Riassume testi di qualsiasi tipo in qualche riga con l'intelligenza artificiale
+        </div>
+        <span class="arrow">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </div>
+    </a>
+    
+    <a href="lollo.framer.website/ai/will-image-generator" class="control-box">
+      <div class="control-content">
+        <span class="title">Will Image Generator</span>
+        <div class="description">
+          Crea immagini e opere d'arte realistiche a partire da una descrizione in linguaggio naturale
+        </div>
+        <span class="arrow">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </div>
+    </a>
+    
+    <a href="lollo.framer.website/ai/will-translator" class="control-box">
+      <div class="control-content">
+        <span class="title">Will Translator</span>
+        <div class="description">
+          Traduce il tuo testo in inglese in qualche istante con il processamento del linguaggio naturale di ultima generazione
+        </div>
+        <span class="arrow">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</body>
+
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 600px) {
+  .control-center {
+    flex-direction: column;
+  }
+
+  .control-box {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .control-box {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .control-box {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.control-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-box {
+  margin: 10px;
+  background-color: #efefef;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.control-box:hover {
+  transform: scale(1.05);
+}
+
+.control-content {
+  text-align: center;
+  font-weight: 700;
+  margin: 32px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.arrow {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  text-align: left;
+  margin: 8px 0px 0px;
+}
+</style>
+</html>
